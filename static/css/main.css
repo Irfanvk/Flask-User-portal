@@ -1,0 +1,87 @@
+/* 
+ *General
+ */
+
+html,
+body,
+h1 {
+    margin: 0;
+    padding-top: 10px ;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 42px;
+    letter-spacing: -1.2px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.section-content {
+    color: #3a3a3a;
+    float: left;
+    width: 340px;
+    padding: 160px 0;
+}
+
+.section-device {
+    float: right;
+    position: relative;
+    top: 65px;
+}
+
+.section-device img {
+    width: 600px;
+}
+
+.btn-primary {
+    background: #4285f4;
+    border: 1px solid #1266f1;
+    border-radius: 3px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.33px;
+    padding: 10px 30px 10px 30px;
+
+}
+
+.btn-secondary {
+    background: inherit;
+    border: 1px solid #1266f1;
+    border-radius: 3px;
+    color: #4285f4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.33px;
+    padding: 10px 30px 10px 30px;
+
+
+}
