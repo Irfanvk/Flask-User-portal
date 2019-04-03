@@ -21,12 +21,17 @@ def index():
 
 @app.route("/about")
 def about():
+    if 'email' not in session:
+        return redirect(url_for('login'))
+
     return render_template("about.html")
 
 
 @app.route("/signup", methods=['GET', 'POST'])
 def signup():
     form = SignupForm()
+    if 'email' in session:
+        return redirect(url_for('home'))
 
     if request.method == 'POST':
         if form.validate() == False:
@@ -46,6 +51,8 @@ def signup():
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     form = LoginForm()
+    if 'email' in session:
+        return redirect(url_for('home'))
 
     if request.method == 'POST':
         if form.validate() == False:
@@ -74,8 +81,12 @@ def logout():
 
 @app.route("/home")
 def home():
+    if 'email' not in session:
+        return redirect(url_for('login'))
     return render_template("home.html")
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5050)
+# if __name__ == "__main__":
+#     app.run(debug=True, host="0.0.0.0", port=5000)
