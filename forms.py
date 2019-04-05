@@ -27,3 +27,10 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password', validators=[
                              DataRequired("Please enter a password"), Length(min=6, max=12, message="password must be atleast 6 characters")])
     submit = SubmitField('Login')
+
+
+class AddressForm(FlaskForm):
+    """docstring for AddressForm"""
+    address = StringField('Address', validators=[
+                          DataRequired("Please enter an address")])
+    submit = SubmitField('Search')

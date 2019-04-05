@@ -97,6 +97,24 @@ a {
     background-color:inherit;
     border: none;
     border-bottom: 2px solid #4285f4;
-    transition: border 1s;
 
+}
+.nav{
+    display: grid;
+    /* align-content: end; */
+    justify-content: end;
+}
+.form-group-2{
+    padding: 20px 0 30px 0;
+}
+.form-group-2 input {
+    background-color:inherit;
+    border: none;
+    border-bottom: 2px solid #4285f4;
+    width: 400px;
+}
+
+#mapid { 
+    height: 180px; 
+    width: 300px;
 }
